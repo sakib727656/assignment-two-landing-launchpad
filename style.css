@@ -145,6 +145,22 @@ form {
   display: flex;
   justify-content: center;
 }
+.footer {
+  justify-content: space-around;
+  padding: 50px;
+}
+.c-desciption {
+  width: 350px;
+  color: #111111;
+}
+.abouts ul li {
+  padding: 15px;
+}
+.social-icos {
+  height: 40px;
+  width: 250px;
+  gap: 30px;
+}
 
 @media screen and (max-width: 576px) {
   .container {
@@ -185,7 +201,9 @@ form {
     font-size: 10px;
     font-weight: 400;
   }
-  .lover {
+  .lover,
+  .footer,
+  .abouts {
     flex-direction: column;
   }
   input {
