@@ -7,12 +7,19 @@
 }
 
 /* shared styles */
+
 .banner-title-color {
   color: #e95a08;
 }
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+.btn-primary {
+  color: white;
+  background-color: #e95a08;
+  padding: 15px 60px;
+  border-radius: 10px;
 }
 /* nav area styles */
 .nav-link {
@@ -26,7 +33,117 @@
   margin-top: 120px;
   margin-bottom: 120px;
 }
-.banner-description {
+/* plants title */
+.plants-title {
+  font-size: 3.75rem;
+}
+.plants-span {
+  color: #e95a08;
+}
+.plants-description {
+  max-width: 850px;
+  margin: 30px auto;
+}
+
+/* plants area styles */
+
+.plants-name,
+.plants-prize {
+  font-size: 22px;
+  color: #111111;
+}
+.plants-imag {
+  border-radius: 20px;
+}
+.plants-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.plants-cards {
+  border: 1px solid rgb(195, 195, 195);
+  box-shadow: 5px 5px 10px gray;
+  padding: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+.lover {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.lover-list {
+  color: #11111179;
+  list-style: square;
+  margin: 30px;
+}
+.lover-title {
+  font-size: 3.13rem;
+}
+/* latest deals */
+
+.deals-title {
+  font-weight: bold;
+  font-size: 3.13rem;
+}
+.deals-details {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* deals section .deals-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.deals-big1-offer {
+  background-image: url(assets/deal-bloom.png);
+  position: center;
+}
+.deals-big2-offer {
+  background-image: url(assets/deal-zabo.png);
+}
+.deals-big3-offer {
+  background-image: url(assets/deal-ana.png);
+} */
+
+.bunch {
+  background-image: url("assets/news-letter-bg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0px;
+  text-align: center;
+}
+
+.bunch-title {
+  font-size: 3.12rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+input {
+  padding: 12px;
+  width: 550px;
+  border: 1px solid #ccc;
+  border-radius: 10px 0px 0px 10px;
+  margin-right: 0px;
+  background-color: white;
+  outline: none;
+}
+
+button {
+  padding: 12px 30px;
+  background-color: #e95a08;
+  color: white;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  margin-left: 0;
+}
+form {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 576px) {
@@ -54,5 +171,31 @@
     font-size: 2rem;
     line-height: 40px;
     padding-top: 20px;
+  }
+  .plants-list {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px;
+  }
+  .plants-name,
+  .plants-prize {
+    font-size: 16px;
+  }
+  .btn-primary {
+    padding: 10px 40px;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .lover {
+    flex-direction: column;
+  }
+  input {
+    width: 230px;
+  }
+  .bunch {
+    padding: 100px 0px;
+  }
+  .bunch-title {
+    font-size: 1.6rem;
+    font-weight: 500;
   }
 }
