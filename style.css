@@ -1,0 +1,58 @@
+@import "tailwindcss";
+.noto-serif-fonts {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* shared styles */
+.banner-title-color {
+  color: #e95a08;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/* nav area styles */
+.nav-link {
+  color: #cacaca;
+}
+/* banner area styles */
+
+.banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.banner-description {
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 350px;
+  }
+  .nav-link {
+    display: none;
+  }
+  .nav-link-icon {
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .nav-img {
+    width: 30%;
+  }
+  .banner {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+  .banner-title {
+    font-size: 2rem;
+    line-height: 40px;
+    padding-top: 20px;
+  }
+}

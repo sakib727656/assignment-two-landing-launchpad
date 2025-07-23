@@ -5,8 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/dd6d5eff55.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="navbar container justify-between items-center flex">
+        <img src="assets/logo.png" alt="" class="nav-img" /><!-- flex use -->
+
+        <ul class="nav-links gap-10 flex">
+          <!-- flex use -->
+
+          <li><a href="" class="nav-link list-none font-medium">Home</a></li>
+          <li><a href="" class="nav-link list-none font-medium">Shop</a></li>
+          <li>
+            <a href="" class="nav-link list-none font-medium">About us</a>
+          </li>
+          <li>
+            <a href="" class="nav-link-icon list-none font-medium"
+              ><i class="fa-solid fa-cart-shopping"></i>Cart ($56)</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- banner area -->
+      <div class="banner container items-end">
+        <div class="banner-content">
+          <h3
+            class="banner-title text-6xl font-bold font-[noto-serif-fonts] leading-[90px]"
+          >
+            ALWAYS
+            <span class="banner-title-color">FRESH FLOWERS</span>
+          </h3>
+          <p class="banner-description font-light text-xl">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh flowers that are perfect for any occasion.
+          </p>
+        </div>
+        <div class="banner-img">
+          <img src="assets/hero-flower.png" alt="" />
+        </div>
+      </div>
+    </header>
   </body>
 </html>
