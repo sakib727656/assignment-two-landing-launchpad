@@ -73,6 +73,19 @@
   margin-top: 120px;
   margin-bottom: 120px;
 }
+.sticker {
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+}
+.sticker-prime {
+  width: 250px;
+  position: absolute;
+  top: -26%;
+  left: 90%;
+  transform: translate(-45%);
+  z-index: 2;
+}
 .lover-list {
   color: #11111179;
   list-style: square;
@@ -215,5 +228,8 @@ form {
   .bunch-title {
     font-size: 1.6rem;
     font-weight: 500;
+  }
+  .sticker-prime {
+    display: none;
   }
 }
